@@ -14,16 +14,17 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="static/js/bootstrap.min.js"></script>
 
+    <script src="static/js/vidbg.js"></script>
+
 </head>
 <body>
-    <div class="container">
+<div class="container">
 
-        <video id="bgvideo" autoplay="" loop="" poster="static/images/polina.jpg" height="480" width="800">
-            <source src="static/images/polina.webm" type="video/webm">
-            <source src="static/images/polina.mp4" type="video/mp4">
-            <source src="static/images/polina.ogg" type="video/ogg">
-        </video>
-
+    <div id="bgvideo" autoplay="" loop=""
+         data-vidbg-bg="mp4: static/images/polina.mp4, webm: static/images/polina.webm, poster: static/images/polina.jpg"
+         data-vidbg-options="loop: true, muted: true, resizing: true;">
     </div>
+
+</div>
 </body>
 </html>
