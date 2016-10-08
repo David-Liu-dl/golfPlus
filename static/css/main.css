@@ -1,0 +1,60 @@
+
+
+#bgvideo {
+    background: rgba(0, 0, 0, 0) url("polina.jpg") no-repeat scroll 0 0 / cover ;
+    bottom: 0;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    right: 0;
+    width: auto;
+    z-index: -100;
+}
+
+.main-container{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    /*background-color: black;*/
+}
+
+.header{
+    position: fixed;
+    left: 0px;
+    top:0px;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    height:50px;
+}
+
+#footer {
+    position: fixed;
+    left:0px;
+    bottom: 0px;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    height:30px;
+}
+
+.header-middle-text{
+    text-align: center;
+    padding-left: 30px;
+    line-height: 50px;
+    color: #cfb154;
+}
+
+
+.footer-middle-text{
+    text-align: center;
+    padding-left: 30px;
+    line-height: 30px;
+    color: #cfb154;
+}
+
+.footer-btn-text{
+    /*line-height: 30px;*/
+    color: #cfb154;
+    font-size: 12px;
+    word-spacing:0px;
+}
