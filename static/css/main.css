@@ -222,3 +222,7 @@ body {
     background-color: #fff
 }
 
+.item {
+    min-height:350px;
+}
+
