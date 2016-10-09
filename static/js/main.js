@@ -2,7 +2,7 @@
  * Created by yuhaoliu on 8/10/2016.
  */
 $(function () {
-    $('.carousel').carousel();
+    // $('.carousel').carousel();
 
     $('ul.navbar-nav li.dropdown').hover(function () {
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
@@ -13,7 +13,9 @@ $(function () {
     var $myCarousel = $('#carousel-example-generic');
 
 // Initialize carousel
-    $myCarousel.carousel();
+    $myCarousel.carousel({
+        interval: 5000
+    });
 
     function doAnimations(elems) {
         var animEndEv = 'webkitAnimationEnd animationend';
@@ -29,6 +31,8 @@ $(function () {
             // once the animation event has ended
             $this.addClass($animationType).one(animEndEv, function () {
                 $this.removeClass($animationType);
+                console.log(1);
+                elems.delay(6000).fadeOut();
             });
         });
     }
@@ -42,15 +46,20 @@ $(function () {
     doAnimations($firstAnimatingElems);
 
 // Pause the carousel
-    $myCarousel.carousel('pause');
+//     $myCarousel.carousel('pause');
 
 // Attach our doAnimations() function to the
 // carousel's slide.bs.carousel event
     $myCarousel.on('slide.bs.carousel', function (e) {
+        // e.preventDefault();
+        // e.stopPropagation();
         // Select the elements to be animated inside the active slide
         var $animatingElems = $(e.relatedTarget)
             .find("[data-animation ^= 'animated']");
         doAnimations($animatingElems);
+
+        // console.log(e);
+        // debugger;
     });
 
 })
