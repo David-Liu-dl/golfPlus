@@ -69,8 +69,15 @@ body {
     position: relative;
 }
 
-#header2 {
-    top: 0px;
+#header2{
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+#header2 .container {
     height: 50px;
     line-height: 50px;
 }
@@ -95,6 +102,11 @@ body {
 
 .navbar-nav li a:hover {
     background-color: transparent;
+}
+
+.nav > li > a{
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 #collapse-menu li {
@@ -209,10 +221,4 @@ body {
     right: 0px;
     background-color: #fff
 }
-
-.carousel-inner video,.carousel-inner video source, .carousel-inner img{
-    height: auto;
-    min-height: 100%;
-}
-
 
