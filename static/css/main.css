@@ -1,6 +1,6 @@
 
 #bgvideo {
-    background: rgba(0, 0, 0, 0) url("polina.jpg") no-repeat scroll 0 0 / cover ;
+    background: rgba(0, 0, 0, 0) url("polina.jpg") no-repeat scroll 0 0 / cover;
     bottom: 0;
     height: auto;
     min-height: 100%;
@@ -11,138 +11,144 @@
     z-index: -100;
 }
 
-#header{
+#header {
     position: fixed;
     left: 0px;
-    top:0px;
-    width:100%;
+    top: 0px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    height:50px;
+    height: 50px;
     line-height: 50px;
 }
 
-.header-middle-text{
-    height:100%;
+.header-middle-text {
+    height: 100%;
     padding-left: 30px;
     color: #cfb154;
 }
 
-#header-logo-row{
+#header-logo-row {
     text-align: center;
 }
 
-#header-logo{
+#header-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width:100%;
-    max-height:100%;
+    max-width: 100%;
+    max-height: 100%;
     vertical-align: middle;
 }
 
 #footer {
     position: fixed;
-    left:0px;
+    left: 0px;
     bottom: 0px;
-    width:100%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     height: 40px;
     line-height: 40px;
 }
 
-.footer-middle-text{
-    height:100%;
+.footer-middle-text {
+    height: 100%;
     /*text-align: center;*/
     vertical-align: middle;
     padding-left: 30px;
     color: #cfb154;
 }
-.black-container{
+
+.black-container {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-body{
+body {
     background-color: #000;
     min-height: 100%;
     height: auto;
     position: relative;
 }
 
-#header2{
-    top:0px;
-    height:50px;
+#header2 {
+    top: 0px;
+    height: 50px;
     line-height: 50px;
 }
 
-#header-logo2{
-    padding-left:0px;
+#header-logo2 {
+    padding-left: 0px;
 }
 
-#header-logo2 img{
-    height:50px;
+#header-logo2 img {
+    height: 50px;
 
 }
 
-.navbar-nav.navbar-right li:last-child{
+.navbar-nav.navbar-right li:last-child {
     padding-left: 15px;
 }
 
-.navbar-nav li, .navbar-nav li a{
+.navbar-nav li, .navbar-nav li a {
     color: #cfb154;
     text-transform: uppercase;
 }
 
-.navbar-nav li a:hover{
+.navbar-nav li a:hover {
     background-color: transparent;
 }
 
-#collapse-menu li{
+#collapse-menu li {
     display: block;
     width: 100%;
 }
 
-.dropdown-toggle{
+.dropdown-toggle {
     background-color: Transparent;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     border: 1px solid #cfb154;
-    cursor:pointer;
+    cursor: pointer;
     overflow: hidden;
-    outline:none;
+    outline: none;
     z-index: 5;
     padding: 6px 12px !important;
 }
 
-.dropdown-toggle span{
+.dropdown-toggle span {
     color: #cfb154;
 }
 
-.dropdown .dropdown-menu{
+.dropdown .dropdown-menu {
     right: 0px;
     left: auto;
 }
-.dropdown-menu li a{
+
+.dropdown-menu li a {
     color: #cfb154;
 }
 
-.main{
+.main {
     position: absolute;
     bottom: 0px;
     left: 0px;
 }
-.main, .vidbg-box{
-    background: rgba(0, 0, 0, 0) url("polina.jpg") no-repeat scroll 0 0 / cover ;
-    bottom: 0;
+
+.main, .vidbg-box {
+    background: rgba(0, 0, 0, 0) url("../images/polina.jpg") no-repeat scroll 0 0 / cover;
+}
+
+#myCarousel{
     height: auto;
     min-height: 100%;
     min-width: 100%;
     position: fixed;
     right: 0;
     width: auto;
-    z-index: -100;
+    bottom: 0;
+    z-index: -1;
 }
 
 #footer2 {
-    left:0px;
+    left: 0px;
     bottom: 0px;
     min-height: 40px;
     height: auto;
@@ -151,19 +157,62 @@ body{
     right: 0;
 }
 
-#footer2 ul li{
+#footer2 ul li {
     margin-right: 20px;
 }
 
-#footer2 ul li:last-child{
+#footer2 ul li:last-child {
     margin-right: 0px;
 }
 
-#footer2 ul li.icon{
+#footer2 ul li.icon {
     font-size: 18px;
 }
 
+/*slider*/
+.poster-main {
+    position: relative;
+    width: 900px;
+    height: 270px
+}
 
+.poster-main a, .poster-main img {
+    display: block;
+}
 
+.poster-main .poster-list {
+    width: 900px;
+    height: 270px
+}
+
+.poster-main .poster-list .poster-item {
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
+
+.poster-main .poster-btn {
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    top: 0px;
+    z-index: 10;
+    opacity: 0.5;
+}
+
+.poster-main .poster-prev-btn {
+    left: 0px;
+    background-color: #fff
+}
+
+.poster-main .poster-next-btn {
+    right: 0px;
+    background-color: #fff
+}
+
+.carousel-inner video,.carousel-inner video source, .carousel-inner img{
+    height: auto;
+    min-height: 100%;
+}
 
 
