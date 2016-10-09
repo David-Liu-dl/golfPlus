@@ -34,13 +34,25 @@
     <div class="container">
         <div class="row">
             <div id="header-logo2" class="col-md-6">
-                <button type="button" class="dropdown-toggle btn navbar-toggle hidden-lg hidden-md"
-                        data-toggle="collapse" href="#collapse-menu">
-                    <span class="fa fa-bars" aria-hidden="true"></span>
-                </button>
                 <img src="static/images/logo.png" class="img-responsive" alt="Cinque Terre"/>
+                <div class="hidden-nav-lg">
+                    <button type="button" class="dropdown-toggle btn"
+                            data-toggle="collapse" href="#collapse-menu">
+                        <span class="fa fa-bars" aria-hidden="true"></span>
+                    </button>
+                    <ul class="nav navbar-nav collapse" id="collapse-menu">
+                        <li><a href="#">TOURNAMENT</a></li>
+                        <li><a href="#">ACADEMY</a></li>
+                        <li><a href="#">GOLF&COCKTAIL BAR</a></li>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-6 hidden-xs hidden-sm">
+            <div class="col-md-6 hidden-nav-xs">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">TOURNAMENT</a></li>
                     <li><a href="#">ACADEMY</a></li>
@@ -61,19 +73,6 @@
                     </li>
                 </ul>
             </div>
-
-            <div class="col-md-6 hidden-lg hidden-md">
-                <ul class="nav navbar-nav collapse" id="collapse-menu">
-                    <li><a href="#">TOURNAMENT</a></li>
-                    <li><a href="#">ACADEMY</a></li>
-                    <li><a href="#">GOLF&COCKTAIL BAR</a></li>
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                </ul>
-            </div>
         </div>
     </div>
 </div>
@@ -81,33 +80,32 @@
 
 <section class="cd-hero">
     <ul class="cd-hero-slider autoplay">
-        <li>
+        <li class="selected">
             <div class="cd-full-width">
-                <div class="cd-bg-video-wrapper" data-video="static/video/polina">
-                    <!-- video element will be loaded using jQuery -->
-                </div>
+                <div class="cd-bg-video-wrapper" data-video="static/video/polina"></div>
             </div>
         </li>
 
-        <li class="selected">
+        <li class="cd-bg-video">
             <div class="cd-full-width cd-img-container">
                 <img src="static/images/slider1.png">
             </div>
         </li>
 
-        <li class="selected">
+        <li>
             <div class="cd-full-width cd-img-container">
                 <img src="static/images/slider2.png">
             </div>
         </li>
 
-        <li class="selected">
+        <li>
             <div class="cd-full-width cd-img-container">
                 <img src="static/images/slider3.png">
             </div>
         </li>
-
     </ul>
+    <div class = "poster-btn poster-prev-btn"></div>
+    <div class = "poster-btn poster-next-btn"></div>
 </section>
 
 

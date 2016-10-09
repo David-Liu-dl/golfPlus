@@ -109,6 +109,30 @@ body {
     padding-right: 8px;
 }
 
+
+@media only screen and (min-width: 768px) {
+    .hidden-nav-lg {
+        display: none;
+    }
+
+    .hidden-nav-xs {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hidden-nav-xs {
+        display: none;
+    }
+
+    .hidden-nav-lg {
+        display: block;
+    }
+}
+#collapse-menu{
+    width: 100%;
+}
+
 #collapse-menu li {
     display: block;
     width: 100%;
