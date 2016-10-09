@@ -34,13 +34,25 @@
     <div class="container">
         <div class="row">
             <div id="header-logo2" class="col-md-6">
-                <button type="button" class="dropdown-toggle btn navbar-toggle hidden-lg hidden-md"
-                        data-toggle="collapse" href="#collapse-menu">
-                    <span class="fa fa-bars" aria-hidden="true"></span>
-                </button>
                 <img src="static/images/logo.png" class="img-responsive" alt="Cinque Terre"/>
+                <div class="hidden-nav-lg">
+                    <button type="button" class="dropdown-toggle btn"
+                            data-toggle="collapse" href="#collapse-menu">
+                        <span class="fa fa-bars" aria-hidden="true"></span>
+                    </button>
+                    <ul class="nav navbar-nav collapse" id="collapse-menu">
+                        <li><a href="#">TOURNAMENT</a></li>
+                        <li><a href="#">ACADEMY</a></li>
+                        <li><a href="#">GOLF&COCKTAIL BAR</a></li>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-6 hidden-xs hidden-sm">
+            <div class="col-md-6 hidden-nav-xs">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">TOURNAMENT</a></li>
                     <li><a href="#">ACADEMY</a></li>
@@ -61,75 +73,56 @@
                     </li>
                 </ul>
             </div>
-
-            <div class="col-md-6 hidden-lg hidden-md">
-                <ul class="nav navbar-nav collapse" id="collapse-menu">
-                    <li><a href="#">TOURNAMENT</a></li>
-                    <li><a href="#">ACADEMY</a></li>
-                    <li><a href="#">GOLF&COCKTAIL BAR</a></li>
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                </ul>
-            </div>
         </div>
     </div>
 </div>
 <!--------nav end-------->
-<div id="carousel-example-generic" class="carousel-fade carousel slide" data-ride="carousel">
 
-    <!--&lt;!&ndash; Indicators &ndash;&gt;-->
-    <!--<ol class="carousel-indicators">-->
-        <!--<li data-target="#carousel-example-generic" data-slide-to="0" class="active">-->
-        <!--</li>-->
-        <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
-        <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
-    <!--</ol>-->
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-
-        <!-- First slide -->
-        <div class="item active">
-            <div class="carousel-caption">
-                <video data-animation="animated fadeIn"  autoplay loop>
-                    <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" width="1024" height="2024" type="video/mp4">
-                    Your browser does not support the video tag.
+<section class="cd-hero">
+    <ul class="cb-slideshow">
+        <li><span>Image 01</span>
+            <div>
+                <video autoplay loop poster="static/images/polina.jpg" id="bgvid">
+                    <source src="static/images/polina.webm" type="video/webm">
+                    <source src="static/images/polina.mp4" type="video/mp4">
                 </video>
             </div>
-        </div><!-- /.item -->
+        </li>
+        <li><span>Image 02</span>
+            <div></div>
+        </li>
+        <li><span>Image 03</span>
+            <div></div>
+        </li>
+        <li><span>Image 04</span>
+            <div></div>
+        </li>
+    </ul>
 
-        <!-- Second slide -->
-        <div class="item">
-            <div class="carousel-caption">
-                <img  data-animation="animated fadeIn" src="static/images/slider1.png">
-            </div>
-        </div><!-- /.item -->
+     Controls
+    <div clas="cb-slideshow" style="
+     position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+">
 
-        <!-- Third slide -->
-        <div class="item">
-            <div class="carousel-caption">
-                <img  data-animation="animated fadeIn" src="static/images/slider2.png">
-            </div>
-        </div><!-- /.item -->
-
-    </div><!-- /.carousel-inner -->
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic"
-       role="button" data-slide="prev">
+        <a class="left carousel-control" href="#carousel-example-generic"
+        role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic"
-       role="button" data-slide="next">
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic"
+        role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-    </a>
+        </a>
+    </div>
+</section>
 
-</div><!-- /.carousel -->
 
 
 <!--------footer start-------->
