@@ -11,13 +11,6 @@
     z-index: -100;
 }
 
-.main-container{
-    /*position: fixed;*/
-    height: 100%;
-    width: 100%;
-    /*background-color: black;*/
-}
-
 #header{
     position: fixed;
     left: 0px;
@@ -64,8 +57,15 @@
     padding-left: 30px;
     color: #cfb154;
 }
-.main-container{
+.black-container{
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+body{
+    background-color: #000;
+    min-height: 100%;
+    height: auto;
+    position: relative;
 }
 
 #header2{
@@ -83,18 +83,22 @@
 
 }
 
-.navbar-nav{
-    float: right;
-    list-style: none;
+.navbar-nav.navbar-right li:last-child{
+    padding-left: 15px;
 }
 
-.navbar-nav li{
-    margin-right: 20px;
+.navbar-nav li, .navbar-nav li a{
     color: #cfb154;
+    text-transform: uppercase;
 }
 
-.navbar-nav li:last-child{
-    margin-right: 0px;
+.navbar-nav li a:hover{
+    background-color: transparent;
+}
+
+#collapse-menu li{
+    display: block;
+    width: 100%;
 }
 
 .dropdown-toggle{
@@ -105,6 +109,7 @@
     overflow: hidden;
     outline:none;
     z-index: 5;
+    padding: 6px 12px !important;
 }
 
 .dropdown-toggle span{
@@ -115,10 +120,48 @@
     right: 0px;
     left: auto;
 }
-.dropdown .dropdown-menu li a{
+.dropdown-menu li a{
     color: #cfb154;
 }
 
+.main{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.main, .vidbg-box{
+    background: rgba(0, 0, 0, 0) url("polina.jpg") no-repeat scroll 0 0 / cover ;
+    bottom: 0;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    right: 0;
+    width: auto;
+    z-index: -100;
+}
+
+#footer2 {
+    left:0px;
+    bottom: 0px;
+    min-height: 40px;
+    height: auto;
+    line-height: 40px;
+    position: fixed;
+    right: 0;
+}
+
+#footer2 ul li{
+    margin-right: 20px;
+}
+
+#footer2 ul li:last-child{
+    margin-right: 0px;
+}
+
+#footer2 ul li.icon{
+    font-size: 18px;
+}
 
 
 
