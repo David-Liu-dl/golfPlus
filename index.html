@@ -32,24 +32,29 @@
 <!--------nav start-------->
 <div class="black-container container-fluid" id="header2">
     <div class="container">
-        <div class="row" style="margin:0 50px;">
+        <div class="row">
             <div id="header-logo2" class="col-md-6">
-                <img src="static/images/logo.png" class="img-responsive" alt="Cinque Terre"/>
-                <div class="hidden-nav-lg">
-                    <button type="button" class="dropdown-toggle btn"
-                            data-toggle="collapse" href="#collapse-menu">
-                        <span class="fa fa-bars" aria-hidden="true"></span>
-                    </button>
-                    <ul class="nav navbar-nav collapse" id="collapse-menu">
-                        <li><a href="#">TOURNAMENT</a></li>
-                        <li><a href="#">ACADEMY</a></li>
-                        <li><a href="#">GOLF&COCKTAIL BAR</a></li>
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="static/images/logo.png" class="img-responsive" alt="Cinque Terre"/>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="dropdown">
+                            <button type="button" class="dropdown-toggle btn" data-toggle="dropdown" id="dropdown-hide">
+                                <span class="fa fa-bars" aria-hidden="true"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown-hide">
+                                <li><a href="#">TOURNAMENT</a></li>
+                                <li><a href="#">ACADEMY</a></li>
+                                <li><a href="#">GOLF&COCKTAIL BAR</a></li>
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">Ondimore separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6 hidden-nav-xs">
@@ -58,10 +63,10 @@
                     <li><a href="#">ACADEMY</a></li>
                     <li><a href="#">GOLF&COCKTAIL BAR</a></li>
                     <li class="dropdown">
-                        <button type="button" class="dropdown-toggle btn">
+                        <button type="button" class="dropdown-toggle btn" data-toggle="dropdown" id="dropdown-show">
                             <span class="fa fa-bars" aria-hidden="true"></span>
                         </button>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" aria-labelledby="dropdown-show">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
@@ -190,7 +195,7 @@
 
 <!--------footer start-------->
 <div id="footer2" class="black-container container-fluid">
-    <div class="container" style="padding:0 50px;">
+    <div class="container">
         <ul class="nav navbar-nav navbar-right">
             <li><i class="fa fa-map-marker"></i>&nbsp;03 9600 0988</li>
             <li><i class="fa fa-phone"></i>&nbsp;280 KING STREET MELBOURNE, VIC 3000</li>
@@ -217,8 +222,8 @@
         $('#control-icon span').css('display','none');
     }
     function hide_show(e){
-        setTimeout(show_control,100);
-        setTimeout(hide_control,1000);
+        setTimeout(show_control,200);
+        setTimeout(hide_control,5000);
     }
 </script>
 
