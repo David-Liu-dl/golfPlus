@@ -28,11 +28,11 @@
     <script src="static/js/main.js"></script>
 
 </head>
-<body onmousemove="hide_show(event)">
+<body>
 <!--------nav start-------->
 <div class="black-container container-fluid" id="header2">
     <div class="container">
-        <div class="row">
+        <div class="row" style="margin:0 50px;">
             <div id="header-logo2" class="col-md-6">
                 <img src="static/images/logo.png" class="img-responsive" alt="Cinque Terre"/>
                 <div class="hidden-nav-lg">
@@ -81,8 +81,8 @@
 <section class="cd-hero">
     <ul class="cb-slideshow">
         <li class="slide-item" ><span>Image 01</span>
-            <div id="div-video" class="bg embed-responsive embed-responsive-16by9">
-                <video autoplay loop class="embed-responsive-item" poster="static/images/polina.jpg" id="bgvid">
+            <div id="div-video" class="bg">
+                <video autoplay loop poster="static/images/polina.jpg" id="bgvid">
                     <source src="static/images/polina.webm" type="video/webm">
                     <source src="static/images/polina.mp4" type="video/mp4">
                 </video>
@@ -182,14 +182,11 @@
     <!--</div>-->
 </section>
 
-<div id="control-icon">
-    <span class="left"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
-    <span class="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-</div>
+
 
 <!--------footer start-------->
 <div id="footer2" class="black-container container-fluid">
-    <div class="container">
+    <div class="container" style="padding:0 50px;">
         <ul class="nav navbar-nav navbar-right">
             <li><i class="fa fa-map-marker"></i>&nbsp;03 9600 0988</li>
             <li><i class="fa fa-phone"></i>&nbsp;280 KING STREET MELBOURNE, VIC 3000</li>
@@ -220,5 +217,18 @@
         setTimeout(hide_control,1000);
     }
 </script>
+
+<script src="static/js/jquery-1.11.3.js"></script>
+<!-- Optional theme -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/carousel.js"></script>
+
+<script src="static/js/vidbg.js"></script>
+<script src="static/js/slider.js"></script>
+
+<script src="static/js/main.js"></script>
+
 </body>
 </html>
