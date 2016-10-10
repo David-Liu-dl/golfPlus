@@ -568,7 +568,6 @@ video#bgvid {
     height: auto;
     z-index: -100;
     background-size: cover;
-
 }
 
 .bg{
@@ -613,7 +612,6 @@ video#bgvid {
     bottom: 0px;
     left: 0px;
     width: 100%;
-    opacity: 0;
 }
 
 
@@ -666,29 +664,29 @@ video#bgvid {
 
 .cb-slideshow .active .bg{
     visibility: visible;
-    -webkit-animation: imageAnimationIn 10s linear;
-    -moz-animation: imageAnimationIn 10s linear;
-    -o-animation: imageAnimationIn 10s linear;
-    -ms-animation: imageAnimationIn 10s linear;
-    animation: imageAnimationIn 10s linear;
+    -webkit-animation: imageAnimationIn 1s linear;
+    -moz-animation: imageAnimationIn 1s linear;
+    -o-animation: imageAnimationIn 1s linear;
+    -ms-animation: imageAnimationIn 1s linear;
+    animation: imageAnimationIn 1s linear;
 }
 
 /*.cb-slideshow .active .bg{*/
-    /*-webkit-animation: imageAnimationIn 10s linear;*/
-    /*-moz-animation: imageAnimationIn 10s linear;*/
-    /*-o-animation: imageAnimationIn 10s linear;*/
-    /*-ms-animation: imageAnimationIn 10s linear;*/
-    /*animation: imageAnimationIn 10s linear;*/
+    /*-webkit-animation: imageAnimationIn 1s linear;*/
+    /*-moz-animation: imageAnimationIn 1s linear;*/
+    /*-o-animation: imageAnimationIn 1s linear;*/
+    /*-ms-animation: imageAnimationIn 1s linear;*/
+    /*animation: imageAnimationIn 1s linear;*/
 /*}*/
 
 .cb-slideshow .active .text-part{
     visibility: visible;
     /*opacity: 1;*/
-    -webkit-animation: titleAnimation 10s linear infinite;
-    -moz-animation: titleAnimation 10s linear infinite;
-    -o-animation: titleAnimation 10s linear infinite;
-    -ms-animation: titleAnimation 10s linear infinite;
-    animation: titleAnimation 10s linear infinite;
+    -webkit-animation: titleAnimation 1s linear;
+    -moz-animation: titleAnimation 1s linear;
+    -o-animation: titleAnimation 1s linear;
+    -ms-animation: titleAnimation 1s linear;
+    animation: titleAnimation 1s linear;
 }
 
 @-webkit-keyframes imageAnimationOut {
