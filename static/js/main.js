@@ -20,12 +20,13 @@ $(function () {
     });
 
 
-    //check if video is loaded
+    // check if video is loaded
     function checkVideoLoaded(){
         setTimeout(function () {
             if ( $('#bgvid').get(0).readyState === 4 ) {
                 //start sliding
-                recurse(0);
+                clearTimeout(self);
+                console.log("1");
 
             }else {
                 checkVideoLoaded();
@@ -34,7 +35,11 @@ $(function () {
 
     checkVideoLoaded();
 
+    console.log("1");
+    recurse(0);
+
     function recurse(counter) {
+        console.log(counter);
         // get the colour
         var duration = 5000;
         var item = items[counter];
@@ -48,34 +53,42 @@ $(function () {
         }
         // run it again for the next number
         timer = setTimeout(function() {
+            // console.log(timer + " : old timer");
             $(item).removeClass("active");
-            delete items[counter];
-            items.push(item);
-            recurse(counter + 1);
+            var nextIndex = nowIndex + 1;
+            nextIndex = nextIndex > (items.length - 1)? 0 : nextIndex;
+            recurse(nextIndex);
         }, duration);
         // start it for the first number.
     }
 
     function moveToNext() {
-        clearTimeout(timer);
+        if(timer){
+            clearTimeout(timer);
+            timer = null;
+        }
         var nowItem = items[nowIndex];
 
         $(nowItem).removeClass("active");
-        delete nowItem;
-        items.push(nowItem);
 
-        recurse(nowIndex + 1);
+        var nextIndex = nowIndex + 1;
+        nextIndex = nextIndex > (items.length - 1)? 0 : nextIndex;
+
+        recurse(nextIndex);
     }
 
     function moveToPrevious() {
-        clearTimeout(timer);
+        if(timer){
+            clearTimeout(timer);
+            timer = null;
+        }
         var nowItem = items[nowIndex];
-
         $(nowItem).removeClass("active");
-        delete nowItem;
-        items.push(nowItem);
-        var new_index = (items.length - 2) < 0 ? (items.length - 2):0;
-        recurse(new_index);
+
+        var nextIndex = nowIndex - 1;
+        nextIndex = nextIndex < 0 ? (items.length - 1) : nextIndex;
+
+        recurse(nextIndex);
     }
 })
 
