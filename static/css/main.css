@@ -713,12 +713,15 @@ video#bgvid {
     font-size: 30px;
     color: #fff;
     cursor: pointer;
+    z-index: 3000;
+    width: 50px;
+    height: 50px;
 }
 
 #control-icon .left{
-    left: 2%;
+    left: 0%;
 }
 
 #control-icon .right{
-    right: 2%;
+    right: 0%;
 }

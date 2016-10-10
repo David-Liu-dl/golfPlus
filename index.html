@@ -221,10 +221,26 @@
     function hide_control(){
         $('#control-icon span').css('display','none');
     }
-    function hide_show(e){
+    function hide_show(){
         setTimeout(show_control,200);
-        setTimeout(hide_control,5000);
+        setTimeout(hide_control,6000);
     }
+    $(function(){
+        var posX;
+        var posY;
+        var now_posX;
+        var now_posY
+        $('html').mousemove(function(e){
+            now_posX = e.pageX;
+            now_posY = e.pageY;
+            if(posX - now_posX > 10 ||  now_posX - posX > 10
+            || posY - now_posY > 10 ||  now_posY - posY > 10){
+                hide_show();
+            }
+        })
+        posX = now_posX;
+        posY = now_posY;
+    })
 </script>
 
 <script src="static/js/jquery-1.11.3.js"></script>
