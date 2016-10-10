@@ -68,6 +68,10 @@ body {
     min-height: 100%;
     height: auto;
     position: relative;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 #header2 {
@@ -284,9 +288,9 @@ body {
 
 .cb-slideshow li div {
     z-index: 1000;
-    bottom: 30px;
+    bottom: 10%;
     left: 0px;
-    right:20px;
+    right:5%;
 }
 
 .cb-slideshow li:nth-child(1) span {
@@ -577,9 +581,9 @@ video#bgvid {
 
 .text-part{
     position:absolute;
-    margin-top: 100px;
+    margin-top: 8%;
     text-align: right;
-    right: 50px;
+    right: 5%!important;
     opacity: 1;
     visibility: hidden;
 
@@ -630,10 +634,12 @@ video#bgvid {
     z-index: 1000;
 }
 
-.gold-btn :hover {
+.gold-btn:hover {
     background-color: #cfb154;
     color: black;
     font-weight: normal;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .event-block{
@@ -703,4 +709,25 @@ video#bgvid {
     100% {
         opacity: 0;
     }
+}
+
+#control-icon{
+    height: 100%;
+}
+
+#control-icon span{
+    display: none;
+    position: fixed;
+    top: 49%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#control-icon .left{
+    left: 3%;
+}
+
+#control-icon .right{
+    right: 3%;
 }
