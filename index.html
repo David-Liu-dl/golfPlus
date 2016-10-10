@@ -32,7 +32,7 @@
 <!--------nav start-------->
 <div class="black-container container-fluid" id="header2">
     <div class="container">
-        <div class="row">
+        <div class="row" style="margin:0 50px;">
             <div id="header-logo2" class="col-md-6">
                 <img src="static/images/logo.png" class="img-responsive" alt="Cinque Terre"/>
                 <div class="hidden-nav-lg">
@@ -76,58 +76,117 @@
         </div>
     </div>
 </div>
-<!--------nav end-------->
 
+<!--------nav end-------->
 <section class="cd-hero">
     <ul class="cb-slideshow">
-        <li><span>Image 01</span>
-            <div>
+        <li class="slide-item" ><span>Image 01</span>
+            <div id="div-video" class="bg">
                 <video autoplay loop poster="static/images/polina.jpg" id="bgvid">
                     <source src="static/images/polina.webm" type="video/webm">
                     <source src="static/images/polina.mp4" type="video/mp4">
                 </video>
             </div>
         </li>
-        <li><span>Image 02</span>
-            <div></div>
+
+        <li class="slide-item"><span class="bg">Image 02</span>
+            <div class="text-part">
+                <div class="text-fst-part">
+                    <div class="white-text-big">GOLF</div>
+                    <div class="white-text-big">TOURNAMENT</div>
+                </div>
+
+                <div class="text-snd-part">
+                    <div class="white-text-small">THE PERFECT SETUP FOR</div>
+                    <div class="white-text-small">COMPETITIVE GOLF</div>
+                    <div class="white-text-small">TUITION AND ENTERTAINMENT</div>
+                </div>
+
+                <div class="btn-block">
+                    <button type="button" class="btn gold-btn">DETAILS</button>
+                    <button type="button" class="btn gold-btn">OTHER EVENT</button>
+                </div>
+
+                <div class="thumb event-block">
+                    <img src="static/images/even-cover.jpg" class="img-responsive" alt="Cinque Terre" width="200px" height="200px"/>
+                </div>
+            </div>
         </li>
-        <li><span>Image 03</span>
-            <div></div>
+
+        <li class="slide-item" ><span class="bg">Image 03</span>
+            <div class="text-part">
+                <div class="text-fst-part">
+                    <div class="white-text-big">GOLF</div>
+                    <div class="white-text-big">ACADEMY</div>
+                </div>
+
+                <div class="text-snd-part">
+                    <div class="white-text-small">PGA PROFESSIONAL</div>
+                    <div class="white-text-small">COACHING LESSION</div>
+                </div>
+
+                <div class="btn-block">
+                    <button type="button" class="btn gold-btn">COURSES</button>
+                </div>
+
+                <div class="thumb event-block">
+                    <img src="static/images/even-cover.jpg" class="img-responsive" alt="Cinque Terre" width="200px" height="200px"/>
+                </div>
+            </div>
         </li>
-        <li><span>Image 04</span>
-            <div></div>
+        <li class="slide-item"><span class="bg">Image 04</span>
+            <div class="text-part">
+                <div class="text-fst-part">
+                    <div class="white-text-big">GOLF&</div>
+                    <div class="white-text-big">COCKTAIL BAR</div>
+                </div>
+
+                <div class="text-snd-part">
+                    <div class="white-text-small">FULLY LICENSE & PROFESSIONAL BAR</div>
+                    <div class="white-text-small">ALL GOLF RELATED COCKTAILS</div>
+                </div>
+
+                <div class="btn-block">
+                    <button type="button" class="btn gold-btn">DETAILS</button>
+                    <button type="button" class="btn gold-btn">BOOKING</button>
+                </div>
+
+                <div class="thumb event-block">
+                    <img src="static/images/even-cover.jpg" class="img-responsive" alt="Cinque Terre" width="200px" height="200px"/>
+                </div>
+            </div>
         </li>
     </ul>
 
-     Controls
-    <div clas="cb-slideshow" style="
-     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-">
+     <!--Controls-->
+    <!--<div clas="cb-slideshow" style="-->
+     <!--position: fixed;-->
+    <!--right: 0;-->
+    <!--bottom: 0;-->
+    <!--min-width: 100%;-->
+    <!--min-height: 100%;-->
+    <!--width: auto;-->
+    <!--height: auto;-->
+<!--">-->
 
-        <a class="left carousel-control" href="#carousel-example-generic"
-        role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic"
-        role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-        </a>
-    </div>
+        <!--<a class="left carousel-control" href="#carousel-example-generic"-->
+        <!--role="button" data-slide="prev">-->
+        <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+        <!--<span class="sr-only">Previous</span>-->
+        <!--</a>-->
+        <!--<a class="right carousel-control" href="#carousel-example-generic"-->
+        <!--role="button" data-slide="next">-->
+        <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+        <!--<span class="sr-only">Next</span>-->
+        <!--</a>-->
+    <!--</div>-->
 </section>
 
 
 
 <!--------footer start-------->
 <div id="footer2" class="black-container container-fluid">
-    <div class="container">
+    <div class="container" style="padding:0 50px;">
         <ul class="nav navbar-nav navbar-right">
             <li><i class="fa fa-map-marker"></i>&nbsp;03 9600 0988</li>
             <li><i class="fa fa-phone"></i>&nbsp;280 KING STREET MELBOURNE, VIC 3000</li>
