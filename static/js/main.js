@@ -12,8 +12,18 @@ $(function () {
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
     })
 
-    //start sliding
-    recurse(0);
+    //check if video is loaded
+    function checkVideoLoaded(){
+        setTimeout(function () {
+            if ( $('#bgvid').get(0).readyState === 4 ) {
+                //start sliding
+                recurse(0);
+            }else {
+                checkVideoLoaded();
+            }
+    },200)};
+
+    checkVideoLoaded();
 
     function recurse(counter) {
         // get the colour
@@ -25,7 +35,6 @@ $(function () {
 
         if($(item).find('#bgvid').length){
             duration = $(item).find('#bgvid').get(0).duration;
-            alert(duration);
             duration = duration * 1000;
         }
         // run it again for the next number
