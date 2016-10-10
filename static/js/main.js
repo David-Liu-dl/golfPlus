@@ -12,12 +12,21 @@ $(function () {
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
     })
 
+    $('#btn-left').unbind("click").click(function () {
+        moveToPrevious();
+    });
+    $('#btn-right').unbind("click").click(function () {
+        moveToNext();
+    });
+
+
     //check if video is loaded
     function checkVideoLoaded(){
         setTimeout(function () {
             if ( $('#bgvid').get(0).readyState === 4 ) {
                 //start sliding
                 recurse(0);
+
             }else {
                 checkVideoLoaded();
             }
