@@ -390,7 +390,7 @@ body {
     z-index: 1000;
     bottom: 10%;
     left: 0px;
-    right:5%;
+    right:0%;
 }
 
 .cb-slideshow li:nth-child(1) span {
@@ -803,7 +803,8 @@ video#bgvid {
 }
 
 #control-icon{
-    height: 100%;
+    /*height: 100%;*/
+    /*width: 100%;*/
 }
 
 #control-icon span{
@@ -811,18 +812,40 @@ video#bgvid {
     position: fixed;
     top: 49%;
     font-size: 30px;
-    color: #fff;
+    color: #cfb154;
     cursor: pointer;
     z-index: 3000;
     width: 50px;
     height: 50px;
+    text-align: center;
 }
 
 #control-icon .left{
     left: 0%;
+    /*line-height: 50px;*/
 }
 
 #control-icon .right{
     right: 0%;
+    /*line-height: 50px*/
 }
+
+/*select.input-lg {*/
+    /*-webkit-appearance: none;*/
+    /*-moz-appearance: none;*/
+    /*-o-appearance: none;*/
+    /*!* no standardized syntax available, no ie-friendly solution available *!*/
+/*}*/
+
+/*select + i.fa {*/
+    /*float: right;*/
+    /*margin-top: -30px;*/
+    /*margin-right: 5px;*/
+    /*!* this is so when you click on the chevron, your click actually goes on the dropdown menu *!*/
+    /*pointer-events: none;*/
+    /*!* everything after this is just to cover up the original arrow *!*/
+    /*!* (for browsers that don't support the syntax used above) *!*/
+    /*background-color: #fff;*/
+    /*padding-right: 5px;*/
+/*}*/
 
