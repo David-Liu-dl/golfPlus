@@ -1,33 +1,17 @@
 
-/*#bgvideo {*/
-    /*background: rgba(0, 0, 0, 0) url("polina.jpg") no-repeat scroll 0 0 / cover;*/
-    /*bottom: 0;*/
-    /*height: auto;*/
-    /*min-height: 100%;*/
-    /*min-width: 100%;*/
-    /*position: fixed;*/
-    /*right: 0;*/
-    /*width: auto;*/
-    /*z-index: -100;*/
-/*}*/
-
+@font-face {
+    font-family: 'work-sans-bold';
+    src: url('../Work_Sans/WorkSans-Bold.ttf');
+}
 
 @font-face {
+    font-family: 'work-sans-light';
+    src: url('../Work_Sans/WorkSans-Light.ttf');
+}
 
-    font-family: 'work-sans-bold';
-    /*src: url('../Work_Sans/WorkSans-Black');*/
-    /*src: url('../fonts/glyphicons-halflings-regular.ttf');*/
-    src: url('../Work_Sans/WorkSans-Bold.ttf');
-    /*src: local('../Work_Sans'),*/
-
-    /*local('fontName'),*/
-
-    /*url('../Work_Sans/WorkSans-Black') format('tff');*/
-    /*url('fontName.woff') format('woff'),*/
-
-    /*url('fontName.ttf') format('truetype'),*/
-
-    /*url('fontName.svg#fontName') format('svg');*/
+@font-face {
+    font-family: 'work-sans-regular';
+    src: url('../Work_Sans/WorkSans-Regular.ttf');
 }
 
 
@@ -184,6 +168,7 @@ fieldset[disabled] .btnCustom-default.active {
 
 body {
     /*background-color: #000 !important;*/
+    font-family: work-sans-regular;
     background-image: url("../images/background.jpg");
     min-height: 100%;
     height: auto;
@@ -721,6 +706,8 @@ video#bgvid {
 }
 
 .text-snd-part{
+    font-family: work-sans-light;
+    font-weight: 600;
     margin-top: 40px;
     color: white;
     font-size: 15px;
@@ -763,7 +750,6 @@ video#bgvid {
 }
 
 .event-block{
-    /*height: 50%;*/
     height: 200px;
     margin-top:50px ;
     float: right;
@@ -775,9 +761,6 @@ video#bgvid {
 
 .thumb {
     display: block;
-    /*overflow: hidden;*/
-    /*height: 200px;*/
-    /*width: 200px;*/
 }
 
 .thumb img {
@@ -842,10 +825,8 @@ video#bgvid {
 
 #control-icon .left{
     left: 0%;
-    /*line-height: 50px;*/
 }
 
 #control-icon .right{
     right: 0%;
-    /*line-height: 50px*/
 }
