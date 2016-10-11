@@ -25,18 +25,13 @@ $(function () {
         setTimeout(function () {
             if ( $('#bgvid').get(0).readyState === 4 ) {
                 //start sliding
-                clearTimeout(self);
-                console.log("1");
-
+                recurse(0);
             }else {
                 checkVideoLoaded();
             }
     },200)};
 
     checkVideoLoaded();
-
-    console.log("1");
-    recurse(0);
 
     function recurse(counter) {
         console.log(counter);

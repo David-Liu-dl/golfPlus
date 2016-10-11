@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Glof</title>
+    <title>Golf</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="static/css/bootstrap.css">
     <link rel="stylesheet" href="static/css/main.css">
@@ -72,7 +72,7 @@
 <!--------nav end-------->
 <section class="cd-hero">
     <ul class="cb-slideshow">
-        <li class="slide-item" ><span>Image 01</span>
+        <li class="slide-item" ><span></span>
             <div id="div-video" class="bg">
                 <video autoplay loop poster="static/images/polina.jpg" id="bgvid">
                     <source src="static/images/polina.webm" type="video/webm">
@@ -81,7 +81,7 @@
             </div>
         </li>
 
-        <li class="slide-item"><span class="bg">Image 02</span>
+        <li class="slide-item"><span class="bg"></span>
             <div class="text-part">
                 <div class="text-fst-part">
                     <div class="white-text-big">GOLF</div>
@@ -95,8 +95,8 @@
                 </div>
 
                 <div class="btn-block">
-                    <button type="button" class="btn gold-btn">DETAILS</button>
-                    <button type="button" class="btn gold-btn">OTHER EVENT</button>
+                    <button type="button" class="btnCustom gold-btn">DETAILS</button>
+                    <button type="button" class="btnCustom gold-btn">OTHER EVENT</button>
                 </div>
 
                 <div class="thumb event-block">
@@ -105,7 +105,7 @@
             </div>
         </li>
 
-        <li class="slide-item" ><span class="bg">Image 03</span>
+        <li class="slide-item" ><span class="bg"></span>
             <div class="text-part">
                 <div class="text-fst-part">
                     <div class="white-text-big">GOLF</div>
@@ -118,7 +118,7 @@
                 </div>
 
                 <div class="btn-block">
-                    <button type="button" class="btn gold-btn">COURSES</button>
+                    <button type="button" class="btnCustom gold-btn">COURSES</button>
                 </div>
 
                 <div class="thumb event-block">
@@ -126,7 +126,7 @@
                 </div>
             </div>
         </li>
-        <li class="slide-item"><span class="bg">Image 04</span>
+        <li class="slide-item"><span class="bg"></span>
             <div class="text-part">
                 <div class="text-fst-part">
                     <div class="white-text-big">GOLF&</div>
@@ -139,8 +139,8 @@
                 </div>
 
                 <div class="btn-block">
-                    <button type="button" class="btn gold-btn">DETAILS</button>
-                    <button type="button" class="btn gold-btn">BOOKING</button>
+                    <button type="button" class="btnCustom gold-btn" onClick="window.open('cockdetail.html')">DETAILS</button>
+                    <button type="button" class="btnCustom gold-btn">BOOKING</button>
                 </div>
 
                 <div class="thumb event-block">
@@ -162,15 +162,15 @@
 <div id="footer2" class="black-container container-fluid">
     <div class="container">
         <ul class="nav navbar-nav navbar-right">
-            <li><i class="fa fa-map-marker"></i>&nbsp;03 9600 0988</li>
-            <li><i class="fa fa-phone"></i>&nbsp;280 KING STREET MELBOURNE, VIC 3000</li>
-            <li class="icon hidden-xs hidden-sm">
+            <li class="pointer" onClick="window.open('contactus.html')"><i class="fa fa-map-marker" ></i>&nbsp;03 9600 0988</li>
+            <li class="pointer"><i class="fa fa-phone"></i>&nbsp;280 KING STREET MELBOURNE, VIC 3000</li>
+            <li class="pointer icon hidden-xs hidden-sm">
                 <i class="fa fa-facebook-square"></i>
             </li>
-            <li class="icon hidden-xs hidden-sm">
+            <li class="pointer icon hidden-xs hidden-sm">
                 <i class="fa fa-tumblr-square"></i>
             </li>
-            <li class="icon hidden-lg hidden-md">
+            <li class="pointer icon hidden-lg hidden-md">
                 <i class="fa fa-facebook-square"></i>&nbsp;&nbsp;
                 <i class="fa fa-tumblr-square"></i>
             </li>
