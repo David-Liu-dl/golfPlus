@@ -811,7 +811,7 @@ video#bgvid {
 }
 
 #control-icon span{
-    display: none;
+    display: block;
     position: fixed;
     top: 49%;
     font-size: 30px;

@@ -161,36 +161,6 @@
     </div>
 </div>
 <!--------footer end-------->
-<script>
-    function show_control(){
-        $('#control-icon span').css('display','block');
-    }
-
-    function hide_control(){
-        $('#control-icon span').css('display','none');
-    }
-    function hide_show(){
-        setTimeout(show_control,200);
-        setTimeout(hide_control,6000);
-    }
-    $(function(){
-        var posX;
-        var posY;
-        var now_posX;
-        var now_posY
-        $('html').mousemove(function(e){
-            now_posX = e.pageX;
-            now_posY = e.pageY;
-            if(posX - now_posX > 10 ||  now_posX - posX > 10
-            || posY - now_posY > 10 ||  now_posY - posY > 10){
-                hide_show();
-            }
-        })
-        posX = now_posX;
-        posY = now_posY;
-    })
-</script>
-
 <script src="static/js/jquery-1.11.3.js"></script>
 <!-- Optional theme -->
 <!-- Latest compiled and minified JavaScript -->
@@ -200,6 +170,23 @@
 <script src="static/js/slider.js"></script>
 
 <script src="static/js/main.js"></script>
+
+<script>
+    var timer;
+
+    function show_control(){
+        $('#control-icon span').css('visibility','visible');
+    }
+
+    function hide_control(){
+        $('#control-icon span').css('visibility','hidden');
+    }
+    function hide_show(){
+        show_control();
+        clearTimeout(timer);
+        timer = setTimeout(hide_control,2000);
+    }
+</script>
 
 </body>
 </html>
