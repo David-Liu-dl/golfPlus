@@ -7,14 +7,14 @@
     <title>CockDetail</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/bootstrap-theme.min.css">
     <!--<link rel="stylesheet" href="static/css/main.css">-->
-    <link rel="stylesheet" href="static/css/main.css">
-    <link rel="stylesheet" href="static/css/contactus.css">
     <link rel="stylesheet" href="static/css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="static/css/animation.css">
     <link rel="stylesheet" href="static/css/reset.css">
     <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="static/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/contactus.css">
 
 </head>
 <body>
@@ -54,15 +54,99 @@
     </div>
 </div>
 
-<div class="container-fluid" style="position:relative;height:50px; border: 1px solid palegoldenrod">
+<div class="container-fluid">
+    <div id="info-container">
+        <div style="height: 100%">
+        <img id="map-img" src="static/images/map.jpg"/>
+        </div>
+        <div id="info-block">
+            <div id="text-info-block" style="color: white;">
+                <!--left -->
+                <div class="one-line" style="font-weight: bold;font-size: 12px;">
+                    <p>
+                        <div class="one-line icon-block"><i class="fa fa-map-marker" ></i></div>
+                        <div class="one-line">280 KING STREET, MELBOURNE, VIC 3000</div>
+                    </p>
+                    <p>
+                        <div class="one-line icon-block"></div>
+                        <div class="one-line">
+                            <button type="button" class="btnCustom info-btn">OPEN HOUR</button>
+                        </div>
+                    </p>
+                    <p>
+                        <div class="one-line icon-block"></div>
+                        <div class="one-line">11:00 AM - 11:00 PM MON.TO THUR.</div>
+                    </p>
+                    <p>
+                        <div class="one-line icon-block"></div>
+                        <div class="one-line">11:00 AM - 11:00 PM MON.TO THUR.</div>
+                    </p>
+                    <p>
+                        <div class="one-line icon-block"></div>
+                        <div class="one-line">11:00 AM - 11:00 PM MON.TO THUR.</div>
+                    </p>
+
+                </div>
+
+
+                <!--right-->
+                <div class="one-line" style="margin-left:10px;padding-left:20px;border-left: 1px solid white; vertical-align: top;">
+                    <p>
+                        <div class="one-line icon-block">
+                            <i class="fa fa-bus" aria-hidden="true"></i>
+                        </div>
+                        <div class="one-line">
+                            <p style="margin-top: 0px;">
+                                <button type="button" class="btnCustom info-btn" style="font-size: 8px;padding: 2px 2px;">Stop2</button>
+                                <span style="margin-left: 5px;">King Street</span>
+                                <span style="margin-left: 5px;">Trams:12/30/35/109</span>
+                            </p>
+
+                            <p>
+                                <button type="button" class="btnCustom info-btn" style="font-size: 8px;padding: 2px 2px;">Stop3</button>
+                                <span style="margin-left: 5px;">William Street</span>
+                                <span style="margin-left: 5px;">Trams:12/30/35/109</span>
+                            </p>
+
+                            <p>
+                                <button type="button" class="btnCustom info-btn" style="font-size: 8px;padding: 2px 2px;">Stop4</button>
+                                <span style="margin-left: 5px;">Lonsdale Street</span>
+                                <span style="margin-left: 5px;">Trams:12/30/35/109</span>
+                            </p>
+                        </div>
+                    </p>
+
+                    <p>
+                        <div class="one-line icon-block"><i class="fa fa-subway" aria-hidden="true"></i></div>
+                        <div class="one-line">Flagstaff Station</div>
+                    </p>
+                    <p>
+                        <div class="one-line icon-block"><i class="fa fa-product-hunt" aria-hidden="true"></i></div>
+                        <div class="one-line">
+                            <p style="margin-top: 3px">Secure Parking</p>
+                            <p style="margin-top: 3px">558 Little Bouke Street, Melbourne, VIC 3000</p>
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div id="right-btn-block" style="margin-top:20px;float: right">
+            <button id="quick-enquiry-btn" type="button" class="btnCustom info-btn">QUICK ENQUIRY</button>
+        </div>
+    </div>
 
 </div>
+
+
 
 
 <div id="footer2" class="black-container container-fluid">
     <div class="container">
         <ul class="nav navbar-nav navbar-right">
-            <li class="pointer" onClick="window.open('contactus.html')"><i class="fa fa-map-marker" ></i>&nbsp;03 9600 0988</li>
+            <li class="pointer" onClick="window.open('contactus.html')"><i class="fa fa-map-marker"></i>&nbsp;03 9600
+                0988
+            </li>
             <li class="pointer"><i class="fa fa-phone"></i>&nbsp;280 KING STREET MELBOURNE, VIC 3000</li>
             <li class="pointer icon hidden-xs hidden-sm">
                 <i class="fa fa-facebook-square"></i>
