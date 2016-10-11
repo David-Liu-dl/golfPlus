@@ -743,8 +743,7 @@ video#bgvid {
 }
 
 .event-block{
-    height: 200px;
-    width: 200px;
+    /*height: 50%;*/
     margin-top:50px ;
     float: right;
 }
@@ -755,9 +754,9 @@ video#bgvid {
 
 .thumb {
     display: block;
-    overflow: hidden;
-    height: 200px;
-    width: 200px;
+    /*overflow: hidden;*/
+    /*height: 200px;*/
+    /*width: 200px;*/
 }
 
 .thumb img {

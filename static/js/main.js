@@ -36,7 +36,7 @@ $(function () {
     function recurse(counter) {
         console.log(counter);
         // get the colour
-        var duration = 50000;
+        var duration = 10000;
         var item = items[counter];
         nowIndex = counter;
         // animate it
