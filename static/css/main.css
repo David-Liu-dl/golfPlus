@@ -11,6 +11,26 @@
     /*z-index: -100;*/
 /*}*/
 
+
+@font-face {
+
+    font-family: 'work-sans-bold';
+    /*src: url('../Work_Sans/WorkSans-Black');*/
+    /*src: url('../fonts/glyphicons-halflings-regular.ttf');*/
+    src: url('../Work_Sans/WorkSans-Bold.ttf');
+    /*src: local('../Work_Sans'),*/
+
+    /*local('fontName'),*/
+
+    /*url('../Work_Sans/WorkSans-Black') format('tff');*/
+    /*url('fontName.woff') format('woff'),*/
+
+    /*url('fontName.ttf') format('truetype'),*/
+
+    /*url('fontName.svg#fontName') format('svg');*/
+}
+
+
 .btnCustom {
     display: inline-block;
     padding: 6px 12px;
@@ -687,12 +707,11 @@ video#bgvid {
     right: 8%!important;
     opacity: 1;
     visibility: hidden;
-
 }
 
 
 .text-fst-part{
-    font-weight: bold;
+    font-family: work-sans-bold;
     font-size: 50px;
     color: white;
 }
