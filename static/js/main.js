@@ -25,6 +25,7 @@ $(function () {
         setTimeout(function () {
             if ( $('#bgvid').get(0).readyState === 4 ) {
                 //start sliding
+                console.log("1");
                 recurse(0);
             }else {
                 checkVideoLoaded();
@@ -34,7 +35,6 @@ $(function () {
     checkVideoLoaded();
 
     function recurse(counter) {
-        console.log(counter);
         // get the colour
         var duration = 10000;
         var item = items[counter];

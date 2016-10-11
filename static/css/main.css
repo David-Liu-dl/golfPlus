@@ -172,6 +172,7 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    z-index: 1;
 }
 
 #header2 {
@@ -744,6 +745,7 @@ video#bgvid {
 
 .event-block{
     /*height: 50%;*/
+    height: 200px;
     margin-top:50px ;
     float: right;
 }
@@ -768,21 +770,21 @@ video#bgvid {
 
 .cb-slideshow .active .bg{
     visibility: visible;
-    -webkit-animation: imageAnimationIn 5s linear;
-    -moz-animation: imageAnimationIn 5s linear;
-    -o-animation: imageAnimationIn 5s linear;
-    -ms-animation: imageAnimationIn 5s linear;
-    animation: imageAnimationIn 5s linear;
+    -webkit-animation: imageAnimationIn 10s linear;
+    -moz-animation: imageAnimationIn 10s linear;
+    -o-animation: imageAnimationIn 10s linear;
+    -ms-animation: imageAnimationIn 10s linear;
+    animation: imageAnimationIn 10s linear;
 }
 
 .cb-slideshow .active .text-part{
     visibility: visible;
     /*opacity: 1;*/
-    -webkit-animation: titleAnimation 5s linear;
-    -moz-animation: titleAnimation 5s linear;
-    -o-animation: titleAnimation 5s linear;
-    -ms-animation: titleAnimation 5s linear;
-    animation: titleAnimation 5s linear;
+    -webkit-animation: titleAnimation 10s linear;
+    -moz-animation: titleAnimation 10s linear;
+    -o-animation: titleAnimation 10s linear;
+    -ms-animation: titleAnimation 10s linear;
+    animation: titleAnimation 10s linear;
 }
 
 @-webkit-keyframes imageAnimationOut {
@@ -828,23 +830,3 @@ video#bgvid {
     right: 0%;
     /*line-height: 50px*/
 }
-
-/*select.input-lg {*/
-    /*-webkit-appearance: none;*/
-    /*-moz-appearance: none;*/
-    /*-o-appearance: none;*/
-    /*!* no standardized syntax available, no ie-friendly solution available *!*/
-/*}*/
-
-/*select + i.fa {*/
-    /*float: right;*/
-    /*margin-top: -30px;*/
-    /*margin-right: 5px;*/
-    /*!* this is so when you click on the chevron, your click actually goes on the dropdown menu *!*/
-    /*pointer-events: none;*/
-    /*!* everything after this is just to cover up the original arrow *!*/
-    /*!* (for browsers that don't support the syntax used above) *!*/
-    /*background-color: #fff;*/
-    /*padding-right: 5px;*/
-/*}*/
-
